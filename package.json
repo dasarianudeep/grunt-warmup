@@ -1,8 +1,8 @@
 {
   "name": "grunt-warmup",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Grunt task to warmup NodeJS (Express Server) URL's",
-  "main": "index.js",
+  "main": "tasks/warmup.js",
   "scripts": {
     "test": "grunt test"
   },
@@ -10,7 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/dasarianudeep/grunt-warmup.git"
   },
-  "keywords": [],
+  "keywords": [
+    "warmup",
+    "grunt warmup",
+    "server"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
