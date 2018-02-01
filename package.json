@@ -1,0 +1,27 @@
+{
+  "name": "grunt-warmup",
+  "version": "1.0.0",
+  "description": "Grunt task to warmup NodeJS (Express Server) URL's",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dasarianudeep/grunt-warmup.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dasarianudeep/grunt-warmup/issues"
+  },
+  "homepage": "https://github.com/dasarianudeep/grunt-warmup#readme",
+  "devDependencies": {
+    "express": "^4.16.2",
+    "grunt": "^1.0.1"
+  },
+  "dependencies": {
+    "warmup": "^1.2.0"
+  }
+}
