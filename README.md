@@ -1,5 +1,5 @@
 # grunt-warmup
-A minimal Grunt plugin to warmup a web server application (i.e., Node Express Server) by hitting server-side URLs and to perform any tasks. 
+A minimal Grunt plugin to warmup a web server application (i.e., Node Express Server) by hitting server-side URLs and to perform any tasks.The plugin uses [warmup](https://github.com/patrick-steele-idem/warmup) module to run warmups.
 
 ## Installation
 ```
