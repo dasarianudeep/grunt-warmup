@@ -69,4 +69,64 @@ tasks: {name: 'warmup task', func: function(cb){cb()}, timeout: 1000} // 'func' 
 ```
 ### Examples:
 
+```
+1.) Minimal and required configuration:
+
+ grunt.initConfig({
+        warmup:{
+            server: {
+                app: app,
+                urls: ['/path1', '/path2'],
+            }
+        }
+    });
+    
+    
+2.) With additional options and tasks:
+
+grunt.initConfig({
+        warmup:{
+            options: {
+                timeout: 2000,
+                warmupPort: 3000
+            },
+            server_1: {
+                app: app,
+                urls: ['/path1', '/path2'],
+                options: {
+                    warmupPort: 4000
+                },
+            },
+            server_2: {
+                app: app,
+                urls: ['/url1', '/url2'],
+                options: {
+                    warmupPort: 4000
+                },
+            }
+        }
+    });
+    
+ grunt.initConfig({
+        warmup:{
+            options: {
+                timeout: 2000,
+                warmupPort: 3000
+            },
+            server_1: {
+                app: app,
+                urls: ['/path1', '/path2'],
+                tasks:[function(cb) {
+                    cb();
+
+                }, function(cb) {
+                    cb();
+
+                }]
+            }
+        }
+    });
+
+```
+
 
